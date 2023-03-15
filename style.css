@@ -4,11 +4,29 @@ background-color: ;
 }
 
 header {
-text-align: right;
+    display: grid;
+  
+    height: 150px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+ 
+    /* display: grid; */
+    /* grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px; */
+
 background-color: #764790;
 }
+.name {
+    
+    }
+    .app-name {
 
+        
+    }
 .bell {
-viewport-fit: 15;
+width: 40px;
     background-color: ;
+   
 }
