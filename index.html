@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>WebApp</title>
-    <link rel="stylesheet" href="./style.css">
 
-  </head>
-  <body>
-    <header>
-      <div class="grid-header">
-      <div class="app-name">
-        <h1>WebApp™</h1>
-      </div>
- 
-     <!-- div (to contain the bell icon)  -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebApp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header class="grid-header">
+    <h1 class="app-name">Web<span>App™</span></h1>
+    <div class="grid-header-right">
+      <!-- div (to contain the bell icon)  -->
       <div class="bell">
-<img src="web_app_dashboard_v3.2/svgs/bell.svg"/>
-        
+        <img src="web_app_dashboard_v3.2/svgs/bell.svg" alt="" />
+        <span></span>
       </div>
-     <!-- svg
- div#notifications (container element for our notifications)
- img
- h3 (or similar element) -->
- <div><img src="web_app_dashboard_v3.2/images/member-1.jpg"></div>
- <div class="name"><h3>Ann Black</h3></div>
-</div>
- </header>
-<nav>
-<a></a>
-<div class="nav">
-<div class="home">
-  <img src="web_app_dashboard_v3.2/svgs/home.svg">
-</div>
-<div class="bar-chart">
-  <img src="web_app_dashboard_v3.2/svgs/bar-chart.svg">
-</div>
-<div class="members">
-  <img src="web_app_dashboard_v3.2/svgs/members.svg">
-</div>
-<div class="settings">
-  <img src="web_app_dashboard_v3.2/svgs/settings.svg">
-</div>
-</div>
- </nav>
-<main>
-<h1></h1>  
-</main>
-<script src="app.js"></script>
+      <img class="profile-pic" src="web_app_dashboard_v3.2/images/member-1.jpg" alt="" >
+      <h3 class="name">Ann Black</h3>
+    </div>
+  </header>
+  <nav>
+    <a class="home" href="#">
+      <img src="web_app_dashboard_v3.2/svgs/home.svg" alt="" >
+    </a>
+    <a class="bar-chart" href="#charts">
+      <img src="web_app_dashboard_v3.2/svgs/bar-chart.svg" alt="" >
+    </a>
+    <a class="members" href="#members">
+      <img src="web_app_dashboard_v3.2/svgs/members.svg" alt="" >
+    </a>
+    <a class="settings" href="#settings">
+      <img src="web_app_dashboard_v3.2/svgs/settings.svg" alt="" >
+    </a>
+  </nav>
+  <main>
+     <div class="main-header" href="#alert"> 
+      <h2 class="headline">Dashboard</h2>
+      <div class="tab"></div>
+      </div> 
+      
+      <!-- alert banner -->
+<div class="alert" id="alert" >
+  <!-- JS will insert alert here -->
+  </div>
+   
+  </main>
+  <script src="app.js"></script>
 </body>
+
 </html>
