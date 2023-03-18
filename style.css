@@ -14,9 +14,13 @@ body {
     "nav"
     "main";
   color: white;
+  
   font-family: "Martel Sans", sans-serif;
 }
+.tab {
 
+  color: gray;
+}
 .grid-header {
   display: flex;
   align-items: center;
@@ -74,6 +78,10 @@ body {
   font-weight: 300;
 }
 
+.alert {
+background-color: #764790;
+
+}
 
 nav {
   grid-area: nav;
@@ -100,6 +108,7 @@ header {
 
 main {
   grid-area: main;
+ color: black;
 }
 
 @media (min-width: 768px) {
